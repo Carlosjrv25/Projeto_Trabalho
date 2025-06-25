@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="topo">
+
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#listaFormacoes">Formação</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#contato">Contato</a>
+
+  </nav>
+
+  <section id="inicio">
+    <h2>Bem-vindo ao meu Portfólio</h2>
+    <p id="mensagem-dinamica"></p>
+  
+    <img src="/imagens/perfil.jpeg" alt="Foto de Carlos" class="foto-perfil">
+  
+    <div class="botoes">
+      <button onclick="mostrarMensagem()">Clique para saber mais</button>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p id="textoSobre">
+      Olá! Meu nome é Carlos, tenho 26 anos e sou estudante de Desenvolvimento Web, apaixonado por tecnologia.
+    </p>
+    <button onclick="mostrarMais()">Mostrar Mais</button>
+    <div class="voltar-topo">
+      <a href="#topo">↑ Voltar ao topo</a>
+    </div>
+  </section>
+
+
+  <section id="formacao">
+    <h2>Formação</h2>
+    <p>Aqui você encontrará meus cursos e qualificações acadêmicas.</p>
+  
+    <ul id="listaFormacoes">
+      <li>
+        <strong> Análise e Desenvolvimento de Sistemas </strong> – UNINTER (2025) - Cursando
+        <button class="btnDetalhes" onclick="toggleDetalhes(this)">Ver detalhes</button>
+        <p class="detalhes" style="display:none;">
+            O curso de Análise e Desenvolvimento de Sistemas tem como foco formar profissionais capazes de criar, desenvolver e manter sistemas computacionais. Abrange conhecimentos em lógica de programação, linguagens de desenvolvimento (como JavaScript, Python e Java), banco de dados, estrutura de dados, análise de requisitos e testes de software.
+        </p>
+      </li>
+  
+      <li>
+        <strong>Curso de Analista de testes de Software QA</strong> – Ultima School (2023)
+        <button class="btnDetalhes" onclick="toggleDetalhes(this)">Ver detalhes</button>
+        <p class="detalhes" style="display:none;">
+          Aprendizagem prática testes Manuais, Automatizados e mobile.
+        </p>
+      </li>
+      <li>
+        <strong>Curso de Inglês intermédiario</strong> – Idiomas Aslan (2019)
+        <br> <button class="btnDetalhes"onclick="toggleDetalhes(this)">Ver detalhes</button>
+        <p class="detalhes" style="display:none;">
+          Boa capacidade de intendimento e conversação.
+        </p>
+      </li>
+
+    </ul>
+    
+    <div class="voltar-topo">
+      <a href="#topo">↑ Voltar ao topo</a>
+    </div>
+  
+  </section>
+  
+
+  <section id="portfolio">
+    <h2>Meu Portfólio</h2>
+    <p>Aqui estão alguns sites e projetos que desenvolvi durante o curso e por conta própria.</p>
+  
+    <ul id="listaProjetos">
+      <li><a href="https://gitlab.com/carlos8754744/automacao-test-mobile" target="_blank" rel="noopener noreferrer">Projeto 1 - automacao-test-mobile</a></li>
+      <li><a href="https://gitlab.com/carlos8754744/projeto-cypress-web" target="_blank" rel="noopener noreferrer">Projeto 2 - projeto-cypress-web</a></li>
+      <li><a href="https://gitlab.com/carlos8754744/severest-api-teste" target="_blank" rel="noopener noreferrer">Projeto 3 - severest-api-teste</a></li>
+      <li><a href="https://github.com/Carlosjrv25/trilha-html-modulo-2" target="_blank" rel="noopener noreferrer">Projeto 4 - trilha-html-modulo-2
+</a></li>
+      <li><a href="https://github.com/Carlosjrv25/trilha-html-modulo-3-wikipedia/blob/main/index.html#L1C1-L713C8" target="_blank" rel="noopener noreferrer">Projeto 5 - trilha-html-modulo-3-wikipedia
+    </a></li>
+    </ul>
+
+  
+    <button id="btnMostrarMais">Mostrar mais projetos</button>
+  </section>
+  
+  <div class="voltar-topo">
+    <a href="#topo">↑ Voltar ao topo</a>
+  </div>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <form id="formContato">
+      <label for="nome">Nome:</label><br>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome" required><br>
+  
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required><br>
+  
+      <label for="mensagem">Mensagem:</label><br>
+      <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..." required></textarea><br>
+  
+      <button type="submit">Enviar</button>
+    </form>
+  
+    <div id="mensagemSucesso" style="display:none; color: green; margin-top: 15px;"></div>
+  
+    <p>Email: jr.carlos2511@gmail.com<br>
+       LinkedIn: <a href="https://www.linkedin.com/in/carlos-alberto-87461517a" target="_blank" rel="noopener noreferrer">linkedin.com/in/carlos-alberto</a>
+    </p>
+    <a href="#topo">↑ Voltar ao topo</a>
+  </section>
+  
+<script src="script.js"></script>
+
+</body>
+</html>

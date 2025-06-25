@@ -1,0 +1,339 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+  .voltar-topo {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.voltar-topo a {
+  text-decoration: none;
+  color: #333;
+  background-color: #e0e0e0;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.voltar-topo a:hover {
+  background-color: #c5c5c5;
+}
+
+  #formacao {
+    padding: 60px 20px;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+  }
+  
+  #formacao h2 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    color: #222;
+    text-align: center;
+  }
+  
+  #listaFormacoes {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #listaFormacoes li {
+    margin-bottom: 25px;
+    font-size: 1.1em;
+    background: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    position: relative;
+  }
+  
+  .btnDetalhes {
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 7px 14px;
+    margin-left: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btnDetalhes:hover {
+    background-color: #555;
+  }
+  
+  .detalhes {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #444;
+    line-height: 1.4;
+  }
+  
+  #portfolio {
+    padding: 60px 20px;
+    max-width: 700px;
+    margin: 0 auto 60px;
+    background: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  
+  #portfolio h2 {
+    font-size: 2.4em;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  #portfolio ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+  }
+  
+  #portfolio ul li {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+  }
+  
+  #portfolio ul li a {
+    color: #007acc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #portfolio ul li a:hover {
+    color: #004a99;
+  }
+  
+  #btnMostrarMais {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #btnMostrarMais:hover {
+    background-color: #333;
+  }
+  
+
+  #contato {
+    background-color: #fff;
+    padding: 60px 20px;
+    max-width: 600px;
+    margin: 0 auto 60px;
+    border-top: 3px solid #ccc;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  #contato h2 {
+    font-size: 2.2em;
+    margin-bottom: 25px;
+    color: #333;
+  }
+  
+  #formContato {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+  }
+  
+  #formContato label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #222;
+  }
+  
+  #formContato input[type="text"],
+  #formContato input[type="email"],
+  #formContato textarea {
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  #formContato input[type="text"]:focus,
+  #formContato input[type="email"]:focus,
+  #formContato textarea:focus {
+    border-color: #000;
+    outline: none;
+  }
+  
+  #formContato button {
+    padding: 12px;
+    background-color: black;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #formContato button:hover {
+    background-color: #333;
+  }
+  
+  #contato p {
+    margin-top: 30px;
+    font-size: 1em;
+    color: #555;
+  }
+  
+  #contato a {
+    display: inline-block;
+    margin-top: 20px;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  #contato a:hover {
+    color: #555;
+  }
+  
+  #sobre {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-top: 3px solid #ccc;
+    min-height: 50vh;
+  }
+  
+  #sobre h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  #sobre p {
+    font-size: 1.2em;
+    max-width: 700px;
+    margin: 0 auto 20px;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  #sobre button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  #sobre button:hover {
+    background: white;
+    color: black;
+    border: 2px solid black;
+  }
+  #inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #f0f0f0;
+  }
+  
+  .foto-perfil {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 20px;
+    border: 4px solid black;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .botoes button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s;
+  }
+  
+  .botoes button:hover {
+    background: white;
+    color: black;
+    border: 2px solid black;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border: 5px solid black;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: black;
+  }
+  
+  nav a {
+    text-decoration: none;
+    border: 3px solid black;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+  }
+  
+  section {
+    padding: 80px 20px;
+    text-align: center;
+    min-height: 100vh;
+    border-top: 2px solid #ccc;
+  }
+  
+  h2 {
+    font-size: 2em;
+  }
+  
+  input {
+    margin: 5px 0;
+    padding: 8px;
+    width: 80%;
+    max-width: 400px;
+  }
+  
