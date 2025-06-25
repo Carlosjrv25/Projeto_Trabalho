@@ -32,29 +32,30 @@ const mensagens = [
   window.onload = mostrarMensagem;
 
   document.getElementById("formContato").addEventListener("submit", function(event) {
-    event.preventDefault();
-  
-    const nome = document.getElementById("nome").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const mensagem = document.getElementById("mensagem").value.trim();
-    const mensagemSucesso = document.getElementById("mensagemSucesso");
-  
-    if(nome === "" || email === "" || mensagem === "") {
-      alert("Por favor, preencha todos os campos.");
-      return;
-    }
-  
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if(!emailRegex.test(email)) {
-      alert("Por favor, insira um email válido.");
-      return;
-    }
-  
-    mensagemSucesso.textContent = `Obrigado, ${nome}! Sua mensagem foi enviada com sucesso.`;
-    mensagemSucesso.style.display = "block";
+  event.preventDefault();
 
-    this.reset();
-  });
+  const nome = document.getElementById("nome").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const mensagemTexto = document.getElementById("mensagem").value.trim();
+  const mensagemSucesso = document.getElementById("mensagemSucesso");
+
+  if(nome === "" || email === "" || mensagemTexto === "") {
+    alert("Por favor, preencha todos os campos.");
+    return;
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if(!emailRegex.test(email)) {
+    alert("Por favor, insira um email válido.");
+    return;
+  }
+
+  mensagemSucesso.textContent = `Obrigado, ${nome}! Sua mensagem foi enviada com sucesso.`;
+  mensagemSucesso.style.display = "block";
+
+  this.reset();
+});
+
 
   const btnMostrarMais = document.getElementById("btnMostrarMais");
 const listaProjetos = document.getElementById("listaProjetos");
